@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Aide - The Complete Classroom Management Ecosystem</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tutor Aide is a modern classroom management system for tutors and students. Track attendance, generate exam papers with Gemini AI, manage student fees, post notices, and assign homework easily.">
+    <meta name="keywords" content="tutor aide, classroom management, attendance tracker, AI question generator, fee hub, tutoring app, homework organizer, student portal">
+    <meta name="author" content="Soumitra Saha">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Facebook/LinkedIn) Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tutor Aide - The Complete Classroom Management Ecosystem">
+    <meta property="og:description" content="Manage your classroom, track student attendance, automate fee collections, and generate exams in seconds using Google Gemini AI.">
+    <meta property="og:image" content="assets/images/feature-graphic.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="lang-en">
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo-container">
+                <img src="assets/images/logo.png" alt="Tutor Aide Logo" class="logo-img">
+                <span class="logo-text">Tutor Aide</span>
+            </a>
+            
+            <nav class="nav-wrapper">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="active"><span data-lang="en">Home</span><span data-lang="bn">হোম</span><span data-lang="hi">होम</span></a></li>
+                    <li><a href="#features"><span data-lang="en">Features</span><span data-lang="bn">ফিচারসমূহ</span><span data-lang="hi">विशेषताएं</span></a></li>
+                    <li><a href="#ai-power"><span data-lang="en">Gemini AI</span><span data-lang="bn">জেমিনি এআই</span><span data-lang="hi">जेमिनी एआई</span></a></li>
+                    <li><a href="#screenshots"><span data-lang="en">Screenshots</span><span data-lang="bn">স্ক্রিনশট</span><span data-lang="hi">स्क्रीनशॉट</span></a></li>
+                    <li><a href="#how-it-works"><span data-lang="en">How it Works</span><span data-lang="bn">ব্যবহারের নিয়ম</span><span data-lang="hi">कैसे काम करता है</span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <select class="lang-selector" id="lang-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                <a href="#download" class="btn btn-primary">
+                    <i class="fa-solid fa-download"></i>
+                    <span><span data-lang="en">Download</span><span data-lang="bn">ডাউনলোড</span><span data-lang="hi">डाउनलोड</span></span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="gemini-badge" style="background: rgba(139,92,246,0.1); color: var(--accent-purple); border: 1px solid rgba(139,92,246,0.2);">
+                    <span data-lang="en">VERSION 1.1.2 IS ACTIVE</span>
+                    <span data-lang="bn">ভার্সন ১.১.২ এখন সচল</span>
+                    <span data-lang="hi">संस्करण 1.1.2 सक्रिय है</span>
+                </span>
+                
+                <h1>
+                    <span data-lang="en">Tutor Aide: Complete <span>Classroom Ecosystem</span></span>
+                    <span data-lang="bn">টিউটর এইড: সম্পূর্ণ <span>ক্লাসরুম ইকোসিস্টেম</span></span>
+                    <span data-lang="hi">ट्यूटर एड: संपूर्ण <span>क्लासरूम इकोसिस्टम</span></span>
+                </h1>
+                
+                <p>
+                    <span data-lang="en">A modern, automated platform linking teachers and students. Manage smart attendance, track due fees, share announcements, and generate custom test papers using Google Gemini Flash 1.5 AI.</span>
+                    <span data-lang="bn">শিক্ষক ও শিক্ষার্থীদের মধ্যকার একটি ডিজিটাল সেতু। স্মার্ট হাজিরা ট্র্যাকিং, বকেয়া বেতনের হিসাব, নোটিশ ব্রডকাস্টিং এবং গুগল জেমিনি ফ্ল্যাশ এআই ব্যবহার করে তাৎক্ষণিক প্রশ্নপত্র তৈরির চমৎকার সমন্বয়।</span>
+                    <span data-lang="hi">शिक्षकों और छात्रों को जोड़ने वाला एक आधुनिक मंच। स्मार्ट उपस्थिति ट्रैकिंग, देय शुल्क प्रबंधन, नोटिस बोर्ड और गूगल जेमिनी एआई द्वारा संचालित प्रश्न पत्र जनरेटर का उत्कृष्ट मेल।</span>
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i>
+                        <span><span data-lang="en">Get the App</span><span data-lang="bn">অ্যাপটি ডাউনলোড করুন</span><span data-lang="hi">ऐप डाउनलोड करें</span></span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span><span data-lang="en">Explore Modules</span><span data-lang="bn">ফিচারগুলো দেখুন</span><span data-lang="hi">फीचर देखें</span></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="feature-graphic-container">
+                    <img src="assets/images/feature-graphic.png" alt="Tutor Aide App Mockup">
+                </div>
+                
+                <!-- Floating badges -->
+                <div class="floating-badge floating-badge-1">
+                    <i class="fa-solid fa-robot" style="color: var(--accent-blue);"></i>
+                    <div>
+                        <span data-lang="en">Gemini 1.5 AI Powered</span>
+                        <span data-lang="bn">জেমিনি এআই চালিত</span>
+                        <span data-lang="hi">जेमिनी एआई संचालित</span>
+                    </div>
+                </div>
+                
+                <div class="floating-badge floating-badge-2">
+                    <i class="fa-solid fa-language" style="color: var(--accent-orange);"></i>
+                    <div>
+                        <span data-lang="en">EN • BN • HI Support</span>
+                        <span data-lang="bn">ইংরেজি • বাংলা • হিন্দি</span>
+                        <span data-lang="hi">अंग्रेजी • बंगाली • हिंदी</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="section-padding" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span data-lang="en">Core Dashboard Modules</span>
+                    <span data-lang="bn">মূল ড্যাশবোর্ড মডিউলসমূহ</span>
+                    <span data-lang="hi">मुख्य डैशबोर्ड मॉड्यूल</span>
+                </h2>
+                <p>
+                    <span data-lang="en">Tailored features crafted separately for teachers to administer easily, and students to learn efficiently.</span>
+                    <span data-lang="bn">শিক্ষকদের ক্লাসরুম প্রশাসনকে আরামদায়ক করতে এবং শিক্ষার্থীদের লার্নিং এক্সপেরিয়েন্স বাড়াতে পৃথক প্যানেল ব্যবস্থা।</span>
+                    <span data-lang="hi">शिक्षकों के प्रशासनिक कार्यों को आसान बनाने और छात्रों के सीखने के अनुभव को बेहतर बनाने के लिए अलग-अलग पैनल।</span>
+                </p>
+            </div>
+            
+            <div class="panel-switch-wrapper">
+                <div class="panel-switch">
+                    <button class="panel-btn active" id="panel-btn-teacher">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span data-lang="en">Teacher Panel</span>
+                        <span data-lang="bn">শিক্ষক প্যানেল</span>
+                        <span data-lang="hi">शिक्षक पैनल</span>
+                    </button>
+                    <button class="panel-btn" id="panel-btn-student">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span data-lang="en">Student Panel</span>
+                        <span data-lang="bn">শিক্ষার্থী প্যানেল</span>
+                        <span data-lang="hi">छात्र पैनल</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="panel-container">
+                <!-- TEACHER PANEL -->
+                <div class="dashboard-panel active" id="panel-teacher">
+                    
+                    <!-- Feature 1 -->
+                    <div class="glass-card feature-card card-purple">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Smart Class Management</span>
+                            <span data-lang="bn">স্মার্ট ক্লাস ম্যানেজমেন্ট</span>
+                            <span data-lang="hi">स्मार्ट कक्षा प्रबंधन</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Create classrooms easily and share a unique Class Code to invite students instantly. Keep class materials organized.</span>
+                            <span data-lang="bn">খুব সহজেই একাধিক ক্লাস তৈরি করুন এবং অনন্য 'ক্লাস কোড' শেয়ার করে শিক্ষার্থীদের সাথে সাথে যুক্ত করে নিন।</span>
+                            <span data-lang="hi">आसानी से कक्षाएं बनाएं और छात्रों को तुरंत आमंत्रित करने के लिए एक यूनिक क्लास कोड साझा करें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="glass-card feature-card card-teal">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Digital Attendance Tracker</span>
+                            <span data-lang="bn">ডিজিটাল হাজিরা</span>
+                            <span data-lang="hi">डिजिटल उपस्थिति ट्रैकर</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Say goodbye to paper registers. Take attendance with a single click and store structured historical data in the Firestore cloud database.</span>
+                            <span data-lang="bn">কাগজের রেজিস্টার বা খাতা ছাড়াই এক ক্লিকে ক্লাসের হাজিরা গ্রহণ করুন এবং তারিখ অনুযায়ী সুরক্ষিত ডাটাবেসে সেভ রাখুন।</span>
+                            <span data-lang="hi">कागजी रजिस्टर को अलविदा कहें। एक क्लिक में उपस्थिति लें और क्लाउड डेटाबेस में तारीख-वार डेटा सुरक्षित रखें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="glass-card feature-card card-pink">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">AI Question Generator</span>
+                            <span data-lang="bn">এআই প্রশ্নপত্র জেনারেটর</span>
+                            <span data-lang="hi">एआई प्रश्न पत्र जनरेटर</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Leverage Google Gemini AI power to compose creative, short, or multiple-choice questions (MCQs) matching your curriculum in seconds.</span>
+                            <span data-lang="bn">গুগল জেমিনি এআই-এর ম্যাজিক ব্যবহার করে ক্লাসের সিলেবাস অনুযায়ী সৃজনশীল বা এমসিকিউ প্রশ্নপত্র তৈরি করুন মুহূর্তের মধ্যেই।</span>
+                            <span data-lang="hi">गूगल जेमिनी एआई का उपयोग करके सेकंडों में अपने पाठ्यक्रम के अनुसार रचनात्मक या एमसीक्यू प्रश्न पत्र तैयार करें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 4 -->
+                    <div class="glass-card feature-card card-orange">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Automated Fee Hub</span>
+                            <span data-lang="bn">অটোমেটেড ফি ম্যানেজমেন্ট</span>
+                            <span data-lang="hi">स्वचालित शुल्क हब</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Generate monthly honorariums, track due payments, log collections, and issue digital payment receipts directly to students.</span>
+                            <span data-lang="bn">মাসিক টিউটর ফি জেনারেট করা, বকেয়া হিসাব রাখা এবং পেমেন্ট রিসিভ করার সাথে সাথে ডিজিটাল মানি রিসিট প্রদান করা।</span>
+                            <span data-lang="hi">मासिक शुल्क विवरण तैयार करें, बकाया राशि का हिसाब रखें और भुगतान के बाद डिजिटल रसीद प्रदान करें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 5 -->
+                    <div class="glass-card feature-card card-yellow">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Notice Board & Broadcast</span>
+                            <span data-lang="bn">নোটিশ বোর্ড ও ব্রডকাস্ট</span>
+                            <span data-lang="hi">नोटिस बोर्ड और प्रसारण</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Broadcast important announcements, routine changes, or exam alerts to all students or target specific groups.</span>
+                            <span data-lang="bn">জরুরি নোটিশ বা ঘোষণা সকলের উদ্দেশ্যে কিংবা নির্দিষ্ট কোনো ক্লাসের নোটিশ বোর্ডে এক ক্লিকে পাবলিশ করুন।</span>
+                            <span data-lang="hi">सभी छात्रों या किसी विशिष्ट समूह को महत्वपूर्ण घोषणाएं, समय-सारणी में बदलाव या परीक्षा अपडेट भेजें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 6 -->
+                    <div class="glass-card feature-card card-blue">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Homework Archive</span>
+                            <span data-lang="bn">হোমওয়ার্ক ও আর্কাইভ</span>
+                            <span data-lang="hi">गृहकार्य और पुरालेख</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Assign homework with attachments, review submissions, and keep a clean chronological archive of all class assignments.</span>
+                            <span data-lang="bn">শিক্ষার্থীদের জন্য প্রতিদিনের বাড়ির কাজ এসাইন করা এবং পূর্ববর্তী সকল কাজের রেকর্ড সুন্দরভাবে আর্কাইভে সাজিয়ে রাখা।</span>
+                            <span data-lang="hi">अटैचमेंट के साथ गृहकार्य सौंपें, छात्रों के काम की समीक्षा करें और सभी कार्यों का एक व्यवस्थित पुरालेख बनाए रखें।</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- STUDENT PANEL -->
+                <div class="dashboard-panel" id="panel-student">
+                    
+                    <!-- Feature 1 -->
+                    <div class="glass-card feature-card card-blue">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Performance Overview</span>
+                            <span data-lang="bn">পারফরম্যান্স ওভারভিউ</span>
+                            <span data-lang="hi">प्रदर्शन अवलोकन</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">A unified dashboard screen summarizing class attendance stats, active tests status, pending homework, and fee ledgers.</span>
+                            <span data-lang="bn">ড্যাশবোর্ড থেকেই নিজের হাজিরা পার্সেন্টেজ, পরীক্ষা এবং বকেয়া ফিসের সারাংশ গ্রাফিক্যাল ফর্মে ট্র্যাকিং করার সুবিধা।</span>
+                            <span data-lang="hi">डैशबोर्ड से ही अपनी उपस्थिति, आगामी परीक्षाओं और बकाया शुल्क का एक संक्षिप्त सारांश देखें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="glass-card feature-card card-pink">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Live Online Exams</span>
+                            <span data-lang="bn">লাইভ অনলাইন এক্সাম</span>
+                            <span data-lang="hi">लाइव ऑनलाइन परीक्षा</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Participate in MCQ examinations launched by teachers directly inside the app, and receive immediate graded results on submit.</span>
+                            <span data-lang="bn">শিক্ষকের সেট করা অনলাইন এমসিকিউ পরীক্ষায় মোবাইল থেকেই অংশগ্রহণ করুন এবং পরীক্ষা শেষে তাৎক্ষণিক পরীক্ষার ফলাফল জেনে নিন।</span>
+                            <span data-lang="hi">शिक्षक द्वारा आयोजित ऑनलाइन परीक्षाओं में सीधे ऐप से भाग लें और सबमिट करते ही तुरंत परिणाम प्राप्त करें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="glass-card feature-card card-teal">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Digital Routine Slot</span>
+                            <span data-lang="bn">ডিজিটাল ক্লাস রুটিন</span>
+                            <span data-lang="hi">डिजिटल समय-सारणी</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">View weekly routine slots, lecture timings, and tutor availability dates to keep your revision schedule strictly organized.</span>
+                            <span data-lang="bn">কবে কোন ক্লাস অনুষ্ঠিত হবে তার বিস্তারিত সময়সূচী ও বিষয়ভিত্তিক রুটিন ডিজিটাল ডায়েরিতে দেখার সুযোগ।</span>
+                            <span data-lang="hi">कक्षा के समय और शिक्षक की उपलब्धता के साथ साप्ताहिक समय-सारणी देखें ताकि आप अपनी पढ़ाई व्यवस्थित रख सकें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 4 -->
+                    <div class="glass-card feature-card card-orange">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Payment History Log</span>
+                            <span data-lang="bn">পেমেন্ট হিস্টোরি</span>
+                            <span data-lang="hi">भुगतान का इतिहास</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Transparent ledger logging past payments, received amounts, and active dues, showing receipt stamps with full details.</span>
+                            <span data-lang="bn">শিক্ষক কত ফি রিসিভ করেছেন এবং কত বকেয়া আছে তার স্বচ্ছ হিসাব এবং পূর্ববর্তী সফল জমার বিবরণী ট্র্যাকিং।</span>
+                            <span data-lang="hi">पिछले भुगतानों और शेष देय राशि का पूरा विवरण रसीद के साथ पारदर्शी रूप से देखें।</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 5 -->
+                    <div class="glass-card feature-card card-purple">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>
+                            <span data-lang="en">Progress Tracking</span>
+                            <span data-lang="bn">প্রোগ্রেস ট্র্যাকিং</span>
+                            <span data-lang="hi">प्रगति ट्रैकिंग</span>
+                        </h3>
+                        <p>
+                            <span data-lang="en">Review teacher feedback, grades on test sheets, and dynamic star rating metrics to identify fields of academic strength.</span>
+                            <span data-lang="bn">টিউটরের দেওয়া মূল্যায়ন বা রিমার্ক দেখে নিজের দক্ষতা ক্রমাগত বৃদ্ধি করা এবং নিজের গ্রোথ পরীক্ষা করা।</span>
+                            <span data-lang="hi">शिक्षक की टिप्पणियों और स्टार रेटिंग के आधार पर शैक्षणिक प्रदर्शन का विश्लेषण करें और सुधार करें।</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gemini AI Spotlight Section -->
+    <section class="section-padding gemini-spotlight" id="ai-power">
+        <div class="container gemini-grid">
+            <div class="gemini-content">
+                <span class="gemini-badge">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span>Gemini AI Engine</span>
+                </span>
+                <h2>
+                    <span data-lang="en">AI-Powered Question paper generator</span>
+                    <span data-lang="bn">এআই চালিত সৃজনশীল প্রশ্নপত্র মেকার</span>
+                    <span data-lang="hi">एआई संचालित प्रश्न पत्र निर्माता</span>
+                </h2>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                    <span data-lang="en">Integrating <strong>Google Gemini Flash 1.5</strong> inside Jetpack Compose, Tutor Aide makes exam drafting effortless. Input a topic name, choose a question style, and watch the AI write high-quality test questions.</span>
+                    <span data-lang="bn">টিউটর এইড অ্যাপ্লিকেশনে বিল্ট-ইন <strong>গুগল জেমিনি ফ্ল্যাশ ১.৫</strong> ইন্টিগ্রেশন থাকার কারণে শিক্ষকদের এখন পরীক্ষার কোশ্চেন রেডি করতে ঘন্টার পর ঘন্টা সময় দিতে হবে না। টপিকের নাম দিয়ে এআই মুহূর্তে তৈরি করবে প্রশ্নপত্র।</span>
+                    <span data-lang="hi">ऐप में एकीकृत <strong>गूगल जेमिनी 1.5</strong> इंजन की मदद से शिक्षक कुछ ही सेकंड में प्रश्न पत्र तैयार कर सकते हैं। केवल विषय का नाम दर्ज करें और एआई को अपना काम करने दें।</span>
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--accent-purple);"></i>
+                        <span><span data-lang="en">Generate Creative Broad & Short Questions</span><span data-lang="bn">সৃজনশীল বড় ও সংক্ষিপ্ত প্রশ্ন তৈরি</span><span data-lang="hi">रचनात्मक बड़े और छोटे प्रश्न तैयार करना</span></span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--accent-purple);"></i>
+                        <span><span data-lang="en">Create MCQs with Answer Keys automatically</span><span data-lang="bn">উত্তরপত্রসহ অটোমেটিক MCQ প্রশ্ন জেনারেট</span><span data-lang="hi">उत्तर कुंजी के साथ स्वचालित एमसीक्यू निर्माण</span></span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--accent-purple);"></i>
+                        <span><span data-lang="en">Copy-paste to exam board with a single tap</span><span data-lang="bn">এক ট্যাপে কপি করে পরীক্ষার বোর্ডে নেওয়ার সুবিধা</span><span data-lang="hi">एक टैप में कॉपी करके परीक्षा बोर्ड में जोड़ने की सुविधा</span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gemini-visual-box">
+                <div class="ai-demo-ui">
+                    <div class="ai-chat-bubble user-bubble">
+                        <span class="ai-tag"><span data-lang="en">Teacher Command</span><span data-lang="bn">শিক্ষক নির্দেশ</span><span data-lang="hi">शिक्षक निर्देश</span></span>
+                        <p style="color: #fff; font-weight: 500;">
+                            <span data-lang="en">Create 3 MCQ questions from "Light Reflection" chapter.</span>
+                            <span data-lang="bn">"আলোর প্রতিফলন" অধ্যায় থেকে ৩টি এমসিকিউ প্রশ্ন তৈরি করো।</span>
+                            <span data-lang="hi">"प्रकाश का परावर्तन" अध्याय से 3 एमसीक्यू प्रश्न बनाएं।</span>
+                        </p>
+                    </div>
+                    
+                    <div class="ai-chat-bubble gemini-bubble">
+                        <span class="ai-tag" style="color: var(--accent-purple);"><span data-lang="en">Gemini Flash Response</span><span data-lang="bn">জেমিনি এআই রেসপন্স</span><span data-lang="hi">जेमिनी प्रतिक्रिया</span></span>
+                        <div class="ai-code-preview">
+                            <span data-lang="en">
+1. Which mirrors reflect parallel rays to a single focus?<br>
+   &nbsp;&nbsp;A) Convex mirror<br>
+   &nbsp;&nbsp;B) Concave mirror [Correct]<br>
+   &nbsp;&nbsp;C) Plain mirror
+                            </span>
+                            <span data-lang="bn">
+১. কোন দর্পণ সমান্তরাল আলোক রশ্মিকে একটি ফোকাসে মিলিত করে?<br>
+   &nbsp;&nbsp;ক) উত্তল দর্পণ<br>
+   &nbsp;&nbsp;খ) অবতল দর্পণ [সঠিক]<br>
+   &nbsp;&nbsp;গ) সমতল দর্পণ
+                            </span>
+                            <span data-lang="hi">
+1. कौन सा दर्पण समानांतर किरणों को एक फोकस पर केंद्रित करता है?<br>
+   &nbsp;&nbsp;A) उत्तल दर्पण<br>
+   &nbsp;&nbsp;B) अवतल दर्पण [सही]<br>
+   &nbsp;&nbsp;C) समतल दर्पण
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chromebook Banner Display Section -->
+    <section class="section-padding" style="background: rgba(139, 92, 246, 0.02); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="spec-grid">
+                <div class="feature-graphic-container" style="max-width: 100%; border-radius: 20px; box-shadow: var(--shadow-card);">
+                    <img src="assets/images/banner.jpg" alt="Tutor Aide on Chromebook Tablet display ad">
+                </div>
+                <div>
+                    <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 16px;">
+                        <span data-lang="en">Responsive Chromebook & Tablet Support</span>
+                        <span data-lang="bn">ক্রোমবুক ও ল্যাপটপেও চমৎকার ভিউ</span>
+                        <span data-lang="hi">क्रोमबुक और टैबलेट समर्थन</span>
+                    </h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.05rem;">
+                        <span data-lang="en">Tutor Aide uses Jetpack Compose adaptive layout systems. It scales seamlessly from small phone viewports to large-screen Chromebook setups, enabling teachers to view metrics on larger screens.</span>
+                        <span data-lang="bn">টিউটর এইডের ইউজার ইন্টারফেস জেটপ্যাক কম্পোজের আধুনিক রেসপন্সিভ গ্রিড দ্বারা নির্মিত। ফলে মোবাইল তো বটেই, এমনকি ক্রোমবুক, ট্যাবলেট ও ল্যাপটপের বড় স্ক্রিনেও অ্যাপটি চমৎকার এবং মানানসই লুক দেয়।</span>
+                        <span data-lang="hi">ट्यूटर एड आधुनिक रिस्पॉन्सिव ग्रिड तकनीक से लैस है। यह मोबाइल के साथ-साथ क्रोमबुक, टैबलेट और लैपटॉप की बड़ी स्क्रीन पर भी बेहतरीन अनुभव प्रदान करता है।</span>
+                    </p>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); padding: 18px; border-radius: 16px; display: inline-flex; align-items: center; gap: 12px;">
+                        <i class="fa-solid fa-laptop" style="font-size: 1.5rem; color: var(--accent-blue);"></i>
+                        <span style="font-weight: 600; font-size: 0.95rem;">
+                            <span data-lang="en">Adaptive Layout UI System</span>
+                            <span data-lang="bn">অ্যাডাপ্টিভ লেআউট সাপোর্ট</span>
+                            <span data-lang="hi">अनुकूलन लेआउट प्रणाली</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="section-padding screenshots-section" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span data-lang="en">App Interface Showcase</span>
+                    <span data-lang="bn">অ্যাপ্লিকেশন ইন্টারফেস শোকেস</span>
+                    <span data-lang="hi">ऐप इंटरफ़ेस शोकेस</span>
+                </h2>
+                <p>
+                    <span data-lang="en">Take a visual tour through the Tutor Aide app. Beautiful, clean components build a premium learning environment.</span>
+                    <span data-lang="bn">টিউটর এইড অ্যাপ্লিকেশনের ইন্টারফেসের এক ঝলক। একটি প্রিমিয়াম পরিবেশ তৈরি করতে প্রতিটি স্ক্রিন যত্নের সাথে ডিজাইন করা হয়েছে।</span>
+                    <span data-lang="hi">ट्यूटर एड ऐप के शानदार इंटरफ़ेस पर एक नज़र डालें। सीखने और सिखाने के काम को आसान बनाने के लिए हर स्क्रीन को बेहतरीन ढंग से बनाया गया है।</span>
+                </p>
+            </div>
+            
+            <div class="slider-wrapper">
+                <div class="screenshots-container" id="screenshots-scroll">
+                    <!-- Carousel Slides (21 images + extra) -->
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (1).jpeg" alt="Tutor Aide App Page 1"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (2).jpeg" alt="Tutor Aide App Page 2"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (3).jpeg" alt="Tutor Aide App Page 3"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (4).jpeg" alt="Tutor Aide App Page 4"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (5).jpeg" alt="Tutor Aide App Page 5"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (6).jpeg" alt="Tutor Aide App Page 6"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (7).jpeg" alt="Tutor Aide App Page 7"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (8).jpeg" alt="Tutor Aide App Page 8"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (9).jpeg" alt="Tutor Aide App Page 9"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (10).jpeg" alt="Tutor Aide App Page 10"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (11).jpeg" alt="Tutor Aide App Page 11"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (12).jpeg" alt="Tutor Aide App Page 12"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (13).jpeg" alt="Tutor Aide App Page 13"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (14).jpeg" alt="Tutor Aide App Page 14"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (15).jpeg" alt="Tutor Aide App Page 15"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (16).jpeg" alt="Tutor Aide App Page 16"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (17).jpeg" alt="Tutor Aide App Page 17"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (18).jpeg" alt="Tutor Aide App Page 18"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (19).jpeg" alt="Tutor Aide App Page 19"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (20).jpeg" alt="Tutor Aide App Page 20"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/Tutor Aide Home Page (21).jpeg" alt="Tutor Aide App Page 21"></div>
+                    <div class="screenshot-slide"><img src="assets/images/screenshots/screenshot_extra.png" alt="Tutor Aide Dashboard View"></div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="slider-nav">
+                    <button class="slider-btn" id="btn-slide-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="btn-slide-next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-padding" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span data-lang="en">How It Works</span>
+                    <span data-lang="bn">ব্যবহারের নির্দেশিকা</span>
+                    <span data-lang="hi">यह कैसे काम करता है</span>
+                </h2>
+                <p>
+                    <span data-lang="en">Set up classroom ecosystems in three simple steps. Quick, secure, and always synchronized.</span>
+                    <span data-lang="bn">সহজ ৩টি ধাপে ক্লাসরুমের সম্পূর্ণ ইকোসিস্টেম সেটআপ করুন। দ্রুত, সুরক্ষিত এবং রিয়েল-টাইম সিঙ্কড।</span>
+                    <span data-lang="hi">तीन आसान चरणों में अपनी कक्षा स्थापित करें। सुरक्षित, त्वरित और वास्तविक समय में समन्वयित।</span>
+                </p>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="glass-card step-card">
+                    <div class="step-number">01</div>
+                    <h3>
+                        <span data-lang="en">Easy Registration</span>
+                        <span data-lang="bn">নিবন্ধন ও রোল সিলেকশন</span>
+                        <span data-lang="hi">आसान पंजीकरण</span>
+                    </h3>
+                    <p>
+                        <span data-lang="en">Sign in securely with Google Auth or Email Link. Select your role as either a Teacher or a Student.</span>
+                        <span data-lang="bn">গুগল সাইন-ইন বা ইমেইল লিঙ্ক ব্যবহার করে সুরক্ষিতভাবে লগইন করুন এবং নিজের অ্যাকাউন্ট রোল (শিক্ষক বা শিক্ষার্থী) নির্বাচন করুন।</span>
+                        <span data-lang="hi">गूगल ऑथेंटिकेशन या ईमेल लिंक के माध्यम से सुरक्षित लॉगिन करें और अपनी भूमिका (शिक्षक या छात्र) चुनें।</span>
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="glass-card step-card">
+                    <div class="step-number">02</div>
+                    <h3>
+                        <span data-lang="en">Classroom Connection</span>
+                        <span data-lang="bn">ক্লাসরুম কানেকশন</span>
+                        <span data-lang="hi">कक्षा कनेक्शन</span>
+                    </h3>
+                    <p>
+                        <span data-lang="en">Teachers create a new classroom which generates a Class Code. Students join instantly using that code.</span>
+                        <span data-lang="bn">শিক্ষক একটি ক্লাস তৈরি করবেন যা একটি ইউনিক ক্লাস কোড তৈরি করে। শিক্ষার্থীরা সেই কোডটি দিয়ে ক্লাসরুমে জয়েন করবে।</span>
+                        <span data-lang="hi">शिक्षक एक कक्षा बनाएंगे जिससे एक यूनिक क्लास कोड तैयार होगा। छात्र उस कोड का उपयोग करके कक्षा में शामिल होंगे।</span>
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="glass-card step-card">
+                    <div class="step-number">03</div>
+                    <h3>
+                        <span data-lang="en">Live Sync & Manage</span>
+                        <span data-lang="bn">রিয়েল-টাইম সমন্বয়</span>
+                        <span data-lang="hi">लाइव समन्वय</span>
+                    </h3>
+                    <p>
+                        <span data-lang="en">Any updates by the teacher (attendance, fees, notices, or homework) reflect instantly on student dashboards.</span>
+                        <span data-lang="bn">শিক্ষক যা কিছু আপডেট করবেন (যেমন: নোটিশ, হাজিরা বা হোমওয়ার্ক), তা সাথে সাথেই শিক্ষার্থীর মোবাইল স্ক্রিনে রিফ্লেক্ট হবে।</span>
+                        <span data-lang="hi">शिक्षक द्वारा किया गया कोई भी अपडेट (उपस्थिति, शुल्क, नोटिस या गृहकार्य) छात्र के मोबाइल पर तुरंत दिखाई देगा।</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="section-padding" style="background: rgba(139, 92, 246, 0.01); border-top: 1px solid var(--border-color);">
+        <div class="container spec-grid">
+            <div>
+                <h2 style="font-size: 2.2rem; font-weight: 700; margin-bottom: 20px;">
+                    <span data-lang="en">Premium Technology Stack</span>
+                    <span data-lang="bn">প্রযুক্তিগত কাঠামো ও পারফরম্যান্স</span>
+                    <span data-lang="hi">उन्नत तकनीकी संरचना</span>
+                </h2>
+                <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.05rem;">
+                    <span data-lang="en">Built with industry-grade, modern development patterns. Enjoy lightning-fast offline operations, strict reactive databases, and modern layouts.</span>
+                    <span data-lang="bn">আধুনিক ও সিকিউর কোডিং স্ট্রাকচারের উপর ভিত্তি করে অ্যাপ্লিকেশনটি তৈরি করা হয়েছে, যা ধীর গতির ইন্টারনেটেও অত্যন্ত দ্রুত লোড নেয় এবং চমৎকার স্থায়িত্ব প্রদান করে।</span>
+                    <span data-lang="hi">आधुनिक और सुरक्षित कोडिंग ढांचे पर निर्मित, जो इसे अत्यंत तेज़, सुरक्षित और कम इंटरनेट स्पीड में भी आसानी से चलने योग्य बनाता है।</span>
+                </p>
+                <div class="spec-list">
+                    <div class="spec-item">
+                        <h4><i class="fa-solid fa-code" style="color: var(--accent-purple);"></i> Kotlin UI</h4>
+                        <p><span data-lang="en">Declarative layout using Jetpack Compose frameworks.</span><span data-lang="bn">জেটপ্যাক কম্পোজ ফ্রেমওয়ার্ক দিয়ে তৈরি ক্লিন ডিক্লারেটিভ ইউআই।</span><span data-lang="hi">जेटपैक कंपोज का उपयोग करके घोषित क्लीन यूआई।</span></p>
+                    </div>
+                    <div class="spec-item">
+                        <h4><i class="fa-solid fa-server" style="color: var(--accent-teal);"></i> Firebase</h4>
+                        <p><span data-lang="en">Real-time Firestore syncing & secure authentication.</span><span data-lang="bn">রিয়েল-টাইম ফায়ারস্টোর সিঙ্কিং এবং ইমেইল লিঙ্ক অথ।</span><span data-lang="hi">रीयल-टाइम फायरस्टोर सिंकिंग और सुरक्षित लॉगिन।</span></p>
+                    </div>
+                    <div class="spec-item">
+                        <h4><i class="fa-solid fa-moon" style="color: var(--accent-blue);"></i> Dark Mode</h4>
+                        <p><span data-lang="en">Supports automatic dark & light themes.</span><span data-lang="bn">চোখের স্বস্তির জন্য ডার্ক ও লাইট থিমের আকর্ষণীয় সুবিধা।</span><span data-lang="hi">आंखों की सुरक्षा के लिए डार्क और लाइट थीम का समर्थन।</span></p>
+                    </div>
+                    <div class="spec-item">
+                        <h4><i class="fa-solid fa-wifi" style="color: var(--accent-orange);"></i> Offline Cache</h4>
+                        <p><span data-lang="en">Offline operations caching via local databases.</span><span data-lang="bn">ইন্টারনেট না থাকলেও আগের লোড হওয়া ডেটা দেখতে পাওয়া।</span><span data-lang="hi">ऑफ़लाइन कैशिंग के माध्यम से बिना इंटरनेट के डेटा देखना।</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="position: relative; display: flex; justify-content: center;">
+                <div class="glass-card" style="padding: 40px; border-radius: 28px; width: 100%; max-width: 440px;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 24px; color: #fff;">
+                        <span data-lang="en">Technical Spec List</span>
+                        <span data-lang="bn">টেকনিক্যাল স্পেসিফিকেশন</span>
+                        <span data-lang="hi">तकनीकी विशिष्टता</span>
+                    </h3>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--text-secondary);">Framework</span>
+                            <span class="spec-logo-tag">Jetpack Compose</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--text-secondary);">Language</span>
+                            <span class="spec-logo-tag" style="background: rgba(59,130,246,0.1); color: var(--accent-blue);">Kotlin</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--text-secondary);">AI Engine</span>
+                            <span class="spec-logo-tag" style="background: rgba(236,72,153,0.1); color: var(--accent-pink);">Gemini Flash 1.5</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px;">
+                            <span style="color: var(--text-secondary);">Database</span>
+                            <span class="spec-logo-tag" style="background: rgba(249,115,22,0.1); color: var(--accent-orange);">Firebase Firestore</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding-bottom: 5px;">
+                            <span style="color: var(--text-secondary);">Architecture</span>
+                            <span class="spec-logo-tag" style="background: rgba(13,148,136,0.1); color: var(--accent-teal);">Hilt DI (Clean)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Download Section -->
+    <section class="section-padding cta-section" id="download">
+        <div class="container">
+            <div class="cta-box">
+                <h2>
+                    <span data-lang="en">Ready to Optimize Your Classroom?</span>
+                    <span data-lang="bn">আপনি কি আপনার টিউটরিং পরিচালনা সহজ করতে চান?</span>
+                    <span data-lang="hi">क्या आप अपनी ट्यूशन कक्षाओं को डिजिटल बनाना चाहते हैं?</span>
+                </h2>
+                <p>
+                    <span data-lang="en">Download Tutor Aide today. Take smart attendance, manage honorariums, and write exam papers with Gemini AI.</span>
+                    <span data-lang="bn">আজই ডাউনলোড করুন টিউটর এইড অ্যাপ্লিকেশন। ক্লাসরুমের হাজিরা, বেতনের হিসাব রাখা এবং এআই প্রশ্নপত্র তৈরির সব সমাধান এক জায়গায়।</span>
+                    <span data-lang="hi">आज ही डाउनलोड करें ट्यूटर एड। कक्षाओं की उपस्थिति, शुल्क रिकॉर्ड और जेमिनी एआई प्रश्न पत्र निर्माण की सभी सुविधाएं एक ही स्थान पर।</span>
+                </p>
+                <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+                    <!-- Google Play Store Button placeholder -->
+                    <a href="https://play.google.com/store/apps/details?id=com.tutoraide" class="playstore-btn" target="_blank" aria-label="Download on Google Play Store">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="#" class="logo-container">
+                        <img src="assets/images/logo.png" alt="Tutor Aide Logo" class="logo-img">
+                        <span class="logo-text" style="color: #fff;">Tutor Aide</span>
+                    </a>
+                    <p>
+                        <span data-lang="en">The modern educational manager ecosystem, simplifying classrooms, powering tools with AI, and helping students grow.</span>
+                        <span data-lang="bn">একটি আধুনিক শিক্ষা সহায়ক ব্যবস্থা, যা ক্লাসের সময় বাঁচায়, এআই প্রশ্নপত্র তৈরি সহজ করে এবং শিক্ষার্থীর উন্নতি নিশ্চিত করে।</span>
+                        <span data-lang="hi">एक आधुनिक शैक्षिक प्रबंधन प्रणाली, जो कक्षाओं को व्यवस्थित करती है और जेमिनी एआई द्वारा प्रश्न पत्रों का निर्माण करती है।</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">
+                        <span data-lang="en">Quick Links</span>
+                        <span data-lang="bn">গুরুত্বপূর্ণ লিঙ্ক</span>
+                        <span data-lang="hi">महत्वपूर्ण लिंक</span>
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#ai-power">Gemini AI</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">
+                        <span data-lang="en">Contact Developer</span>
+                        <span data-lang="bn">যোগাযোগ করুন</span>
+                        <span data-lang="hi">डेवलपर से संपर्क</span>
+                    </h3>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-user" style="color: var(--accent-purple);"></i> Soumitra Saha</li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--accent-purple);"></i> <a href="mailto:bgasoumitra@gmail.com">bgasoumitra@gmail.com</a></li>
+                        <li><i class="fa-solid fa-code-branch" style="color: var(--accent-purple);"></i> Version: 1.1.2 (2026)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tutor Aide. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="https://github.com" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

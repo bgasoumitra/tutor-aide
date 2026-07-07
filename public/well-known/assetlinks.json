@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tutoraide",
+      "sha256_cert_fingerprints": [
+        "BD:96:53:06:57:11:E2:9D:C5:26:48:D5:A0:52:B0:24:87:DF:44:43:45:DC:4F:0C:A2:67:63:D8:E2:39:52:D4"
+      ]
+    }
+  }
+]
